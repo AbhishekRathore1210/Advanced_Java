@@ -32,6 +32,9 @@ public class TextAreaDemo {
         JButton jb1 = new JButton();
         jb1.setBounds(300,450,200,25);
         c.add(jb1);
+        JButton jb2 = new JButton();
+        jb2.setBounds(300,480,150,25);
+        c.add(jb2);
         jb.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e){
                 String ans = txtArea.getText();
@@ -41,6 +44,10 @@ public class TextAreaDemo {
                     if(ans.charAt(i)==' ')cnt++;
                 }
                 jb1.setText(Integer.toString(cnt));
+                String l = txtArea.getText();
+                int total = l.length();
+                jb2.setText(Integer.toString(total));
+
             }
         });
 
