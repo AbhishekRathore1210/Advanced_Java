@@ -9,10 +9,12 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 class MyFrame extends JFrame implements ItemListener{
+    @SuppressWarnings("rawtypes")
     JComboBox jc;
     JLabel jl;
     JTextField jt;
     Container c;
+    @SuppressWarnings({ "rawtypes", "unchecked" })
     MyFrame(){
         c = getContentPane();
         c.setLayout(null);

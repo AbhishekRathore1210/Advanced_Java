@@ -7,6 +7,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 public class ComboBaxDemo {
+    @SuppressWarnings("unchecked")
     public static void main(String[] args){
         JFrame jf = new JFrame("Combo Box...");
         jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -22,6 +23,7 @@ public class ComboBaxDemo {
 
         Font f = new Font("Arial",Font.BOLD,15);
         String values[] = {"Parle - G","Dairy Milk","Pepsi","Chips"};
+        @SuppressWarnings("rawtypes")
         JComboBox jc = new JComboBox(values);
         jc.setBounds(100,100,110,25);
         jc.addItem("Ice-Cream");
