@@ -16,7 +16,7 @@ public class Password {
         c.add(jp);
         jp.setFont(new Font("Arial",Font.BOLD,34));
         jp.setEchoChar('$');
-        jp.setEchoChar((char)0);
+        // jp.setEchoChar((char)0);
 
         
 

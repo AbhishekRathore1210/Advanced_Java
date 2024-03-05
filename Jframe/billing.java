@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 public class billing {
-    JCheckBox chk1,chk2,chk3,chk4;
+    // JCheckBox chk1,chk2,chk3,chk4;
      public static void main(String[] args){
          JFrame jf = new JFrame("My CheckBox button");
         jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

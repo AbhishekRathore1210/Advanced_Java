@@ -4,7 +4,7 @@ import javax.swing.JFrame;
 import java.awt.*;
 import java.awt.event.*;
 
-public class button implements ActionListener{
+public class button{
     Container c;
     public static void main(String[] args) {
 
@@ -23,13 +23,16 @@ public class button implements ActionListener{
         jb.setBackground(Color.yellow);
         jb.setForeground(Color.red);
         jb.setEnabled(true);
+        jb.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e){
+                c.setBackground(Color.blue);
+        }
+        });
 
         Cursor crsr = new Cursor(Cursor.HAND_CURSOR);
         jb.setCursor(crsr);
         jf.setVisible(true);
 
         }
-        public void actionPerformed(ActionEvent e){
-            c.setBackground(Color.blue);
-    }
+
 }

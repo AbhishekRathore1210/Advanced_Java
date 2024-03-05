@@ -13,7 +13,7 @@ public class ComboBaxDemo {
         jf.setSize(1200,700);
         jf.setLocationRelativeTo(null);
         Container c = jf.getContentPane();
-        c.setLayout(null);
+        c.setLayout(null); // user has to set every components  size and location
 
         JLabel jl  = new JLabel("Menu..");
         jl.setBounds(100,50,100,40);
