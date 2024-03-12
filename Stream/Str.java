@@ -15,7 +15,8 @@ public class Str{
 
        // with Stream
         Stream<Integer> strm1 = list1.stream();
-        Collection<Integer> collect1 = strm1.filter(n->n%2==1).collect(Collectors.toList());
-        System.out.println(collect1);
+        // Collection<Integer> collect1 = strm1.filter(n->n%2==1).collect(Collectors.toList());
+        // System.out.println(collect1);
+        strm1.filter(n->n%2==0).forEach(n->System.out.println(n));
     }
 }
