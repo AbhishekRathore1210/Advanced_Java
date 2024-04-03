@@ -8,6 +8,7 @@ public class PipeDemo {
         String data = "Computer" ;
         ByteBuffer bb = ByteBuffer.allocate(1024);
         bb.clear();
+        // System.out.println("Computer");
         bb.put(data.getBytes());
         bb.flip();
         while(bb.hasRemaining()){
@@ -16,9 +17,13 @@ public class PipeDemo {
         Pipe.SourceChannel psource = p.source();
         bb = ByteBuffer.allocate(1024);
         while(psource.read(bb) > 0){
-            char t = (char)bb.get();
-            System.out.println(t);
+            bb.flip();
+            while(bb.hasRemaining()){
+                char t = (char) bb.get();
+                System.out.print(t);
+            }
         }
         bb.clear();
+        
     }
 }
